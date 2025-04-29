@@ -1,9 +1,86 @@
-...
-..
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+    }
 
-Weldra komt deze pagina online.
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
 
-.
-..
-...
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+
+    .email-box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      width: 80%;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2980b9;
+      border: none;
+      color: white;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1c5980;
+    }
+
+    @media (min-width: 600px) {
+      .email-box {
+        flex-direction: row;
+      }
+
+      input[type="email"] {
+        width: auto;
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Our Website is Coming Soon</h1>
+    <p>We're working hard to launch the new experience. Stay tuned!</p>
+    <form class="email-box">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </div>
+</body>
+</html>
